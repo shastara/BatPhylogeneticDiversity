@@ -1,0 +1,39 @@
+treefile = COI_OTUs_withSP_final_bestTree.tree
+smooth = 100
+numsites = 657
+mrca = YINGOYANGO JQ365652_2308120135Pteropus_hypomelanus EF080320_2304825416.Cyttarops_alecto
+min = YINGOYANGO 58.00
+max = YINGOYANGO 71.00
+mrca = YINPTERO JQ365652_2308120135Pteropus_hypomelanus HM540380_2311110682Hipposideros_bicolor
+min = YINPTERO 53.00
+max = YINPTERO 63.00
+mrca = NOCTILIONOIDEA JF449233_2309944450Thyroptera_lavali EF080522_2307878652Noctilio_albiventris
+min = NOCTILIONOIDEA 37.60
+max = NOCTILIONOIDEA 47.00
+mrca = MORMOOPIDAE JF446806_2310577542Mormoops_megalophylla JF455428_2310762045Pteronotus_personatus
+min = MORMOOPIDAE 30.80
+max = MORMOOPIDAE 36.20
+mrca = PHYLLOSTOMIDAE JF447258_2311236641Lampronycteris_brachyotis JF448682_2310097682Dermanura_glauca
+min = PHYLLOSTOMIDAE 27.33
+max = PHYLLOSTOMIDAE 36.20
+mrca = DESMODONTINAE JF448842_2310083093Diphylla_ecaudata JF435273_2307269588Desmodus_rotundus
+min = DESMODONTINAE 16.70
+max = DESMODONTINAE 23.90
+outfile = dated_besttree.tre
+thorough
+opt = 2
+optad = 2
+moredetailad
+optcvad = 5
+cv
+randomcv
+cvoutfile = cv.out
+cvstart = 1000
+cvstop = 0.1
+nthreads = 8
+cviter = 100
+pliter = 100
+cvsimaniter = 5000
+plsimaniter = 5000
+log_pen
+seed =
