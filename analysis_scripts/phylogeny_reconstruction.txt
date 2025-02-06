@@ -1,0 +1,25 @@
+IQ-Tree2 commands for model selection: 
+
+iqtree2 -s COI_OTUs_withSP_final.fasta -m MFP -B 1000 -alrt 1000 -nt AUTO -T AUTO 
+
+General constraint scheme at the family/subfamily level (for details see Supporting file S2): 
+
+((Pteropodiadae),(Rhinolophoidea)),((Emballonuroidea),(((Thyropteridae),((Noctilionoidae,Furipteridae),((Mormoopidae),((Stenodermatinae),(Glossophaginae),(Lonchophyllinae),(Desmodontinae),(Glyphonycterinae),(Micronycterinae),(Phyllostominae),(Lonchorhininae),(Rhinophyllinae),(Carollinae))))),(Natalidae,((Molossidae),(Miniopteridae),((Murininae),(Myotinae),(Vespertilioninae),(Kerivoulinae)))))))); 
+
+RAxML commands: 
+
+ 
+
+Note that commands for the Superfamily level contraint analyses used the same command and outgroup, with the exception of the provided configuration files (Supporting files S3 and S12) 
+
+ 
+
+HEADING HERE?: 
+
+raxml-ng --all --msa COI_OTUs_withSP_final.fasta --model GTR+F+R8 --tree pars{100} --tree-constraint COI_OTUs_withSP_final_constraint --threads 8 --bs-trees 1000 --outgroup HM541861_2308919124.Rousettus_amplexicaudatus,HM541876_2304410308.Rousettus_leschenaultii,JF442380_2309146122.Eidolon_helvum,JQ365652_2308120135.Pteropus_hypomelanus,MG299065_2309672478.Cynopterus_sphinx,MK410365_2310930876.Rousettus_amplexicaudatus,JQ599982_2248505481.Cynopterus_sphinx,KY315487_2311224138.Balionycteris_maculata,JF442394_2309923128.Epomophorus_wahlbergi,HM541959_2305800343.Sphaerias_blanfordi,HM541195_2309123493.Penthetor_lucasi,HM540788_2305467427.Macroglossus_minimus,HM540859_2305868849.Megaerops_niphanae,HM540196_2310819678.Cynopterus_brachyotis,HM540253_2308423660.Eonycteris_spelaea,HM540187_2308962371.Balionycteris_maculata,HM540110_2304541402.Aethalops_alecto,HM540139_2310559835.Aselliscus_stoliczkanus,HM540193_2310162444.Coelops_frithii,LC406434_2249806609.Aselliscus_stoliczkanus,JF443133_2310739728.Rhinolophus_hipposideros,JF443958_2305749870.Megaderma_lyra,JF443964_2307495760.Megaderma_spasma,JF444045_2308705798.Rhinolophus_lepidus,JF444049_2310802091.Rhinolophus_luctus,HM540344_2308535687.Hipposideros_bicolor,HM540349_2308368963.Hipposideros_cervinus,HM540353_2310580344.Hipposideros_cervinus,HM540380_2311110682.Hipposideros_bicolor,HM540474_2308615989.Hipposideros_larvatus,HM540507_2309120226.Hipposideros_diadema,HM540515_2310808431.Hipposideros_dyacorum,HM540528_2308543847.Hipposideros_galeritus,HM540540_2309507185.Hipposideros_lylei,HM540546_2311003855.Hipposideros_pomona,HM540596_2310109450.Hipposideros_pomona,HM541310_2308014032.Rhinolophus_acuminatus,HM541445_2311064730.Rhinolophus_pusillus,HM541478_2306664144.Rhinolophus_pusillus,HM541522_2309019307.Rhinolophus_thomasi,HM541620_2306156537.Rhinolophus_malayanus,HM541685_2307696102.Rhinolophus_pearsonii,HM541769_2306716386.Rhinolophus_pearsonii,HM541771_2309690771.Rhinolophus_philippinensis,HM541780_2308835279.Rhinolophus_shameli,HM541843_2304880023.Rhinolophus_trifoliatus,HM914902_2307422574.Rhinolophus_acuminatus,HQ580334_2305361367.Rhinolophus_ferrumequinum,JF442252_2310684076.Cardioderma_cor,JF442416_2309325247.Hipposideros_commersonii,JF442418_2309166084.Hipposideros_ruber,JF442623_2309811764.Rhinolophus_hildebrandtii,JF442696_2306410396.Triaenops_persicus,JF444154_2310899054.Hipposideros_ruber,JF444157_2311082170.Hipposideros_ruber,JF444224_2307658079.Rhinolophus_alcyone,JQ365631_2308294691.Hipposideros_cineraceus,JQ365654_2304573802.Rhinolophus_borneensis,JQ599813_2310794808.Hipposideros_khaokhouayensis,MK410428_2306254243.Hipposideros_pomona,MK410431_2304647528.Hipposideros_cineraceus,MT407330_2979420277.Rhinolophus_mehelyi,JQ600022_2304734220.Rhinolophus_paradoxolophus  
+
+ 
+
+TreePL commands: 
+
+treePL COI_OTUS_treePL    
